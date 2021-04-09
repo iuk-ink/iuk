@@ -7,21 +7,9 @@ layui.define(['jquery'], function(exports) {
 			},
 			'html': function() {
 				var html = '';
-				$.each(mojia.global.info, function(nums, info) {
-					html += '<table class="layui-table"' + (location.href.indexOf('label/admin') != -1 ? ' style="margin-top:0"' : '') + '><tbody><tr><td colspan="8" style="padding:0">';
-					html += '<a target="_blank" href="' + info.link + '" title="' + info.name + '">';
-					html += '<img src="' + info.pics + '" alt="' + info.tips + '" style="max-width:100%;width:100%;" />';
-					html += '</a></td></tr></tbody></table>';
-				});
 				html += '</tbody></table>';
 				$('.mo-unit-table').before(html);
-			},
-			'info': [{
-				'name': '米上云香港GIA VPS20元起，购买魔加主题的新用户，赠送米上云香港VPS一个月使用时间！',
-				'link': 'https://www.mishangyun.com/aff.php?aff=35',
-				'pics': 'https://cdn.jsdelivr.net/gh/amujie/mojia@master/asset/img/advert.gif',
-				'tips': '米上云香港GIA VPS20元起'
-			}]
+			}
 		},
 		'browse': {
 			'MSIE\\s[0-9]': 'IE系列',

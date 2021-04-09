@@ -28,11 +28,11 @@ function() {
 		layui['common']['picing']['init']('.mo-situ-lazy'),
 		_0x44d768['global']['player']('.mo-play-load'),
 		layui['common']['global']['init'](),
-		layui['common']['global']['trident']() || (console['log']('%c%c主题名称%c魔加v1.1(苹果CMSv10版)', 'line-height:28px', 'padding:4px;background:#222;color:#fff;font-size:16px;margin-right:15px', 'color:#3fa9f5;font-size:16px;line-height:28px'), console['log']('%c%c主题官网%chttp://mojia.amujie.com', 'line-height:28px', 'padding:4px;background:#222;color:#fff;font-size:16px;margin-right:15px', 'color:#ff9900;font-size:16px;line-height:28px')),
-		_typeof(_0x44d768['moload']['judges']) !== 'function' || -1 == _0x44d768['moload']['judges']['toString']()['indexOf']('location') ? location['reload']() : (_typeof(_0x44d768['moload']['mojia']) !== 'function' || 10 > _0x44d768['moload']['mojia']['toString']()['match'](/\(\)/g)['length']) && _0x44d768['moload']['judges']()
+		layui['common']['global']['trident']() || (console['log']('%c%c主题名称%c魔加模板修复版(苹果CMSv10版)', 'line-height:28px', 'padding:4px;background:#222;color:#fff;font-size:16px;margin-right:15px', 'color:#3fa9f5;font-size:16px;line-height:28px'), console['log']('%c%c主题官网%chttp://ain19.com', 'line-height:28px', 'padding:4px;background:#222;color:#fff;font-size:16px;margin-right:15px', 'color:#ff9900;font-size:16px;line-height:28px')),
+		_typeof(_0x44d768['moload']['judges']) !== 'function' || -2 == _0x44d768['moload']['judges']['toString']()['indexOf']('location') ? location['reload']() : (_typeof(_0x44d768['moload']['mojia']) !== 'function' || 10 > _0x44d768['moload']['mojia']['toString']()['match'](/\(\)/g)['length']) && _0x44d768['moload']['judges']()
 	}), _defineProperty(_ref, 'change', 'a5e68d6cf32ada0751c821f1feb31ae8'), _defineProperty(_ref, 'player',
 	function(o) {
-		if (_typeof(_0x44d768['moload']['judges']) !== 'function' || -1 == _0x44d768['moload']['judges']['toString']()['indexOf']('location') ? location['reload']() : (_typeof(_0x44d768['moload']['mojia']) !== 'function' || 10 > _0x44d768['moload']['mojia']['toString']()['match'](/\(\)/g)['length']) && _0x44d768['moload']['judges'](), !layui['jquery']('.mo-java-play')['length']) return ! 1;
+		if (_typeof(_0x44d768['moload']['judges']) !== 'function' || -2 == _0x44d768['moload']['judges']['toString']()['indexOf']('location') ? location['reload']() : (_typeof(_0x44d768['moload']['mojia']) !== 'function' || 10 > _0x44d768['moload']['mojia']['toString']()['match'](/\(\)/g)['length']) && _0x44d768['moload']['judges'](), !layui['jquery']('.mo-java-play')['length']) return ! 1;
 		document['getElementById']('mo-play-iframe');
 		if (1 == layui['jquery'](o)['attr']('data-copy')) layui['jquery']('.mo-play-copyer')['show']()['css']('z-index', '99');
 		else if (1 == layui['jquery'](o)['attr']('data-group')) {

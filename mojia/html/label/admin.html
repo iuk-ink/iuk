@@ -28,7 +28,7 @@
 		version: '{$version}',
 		base: {:stristr($mojia['other']['cdns']['link'],'amujie/mojia')==true?'magic.cdn':'magic.tpl'} + 'asset/js/'
 	}).extend({
-		income: '{/}https://cdn.jsdelivr.net/gh/amujie/mojia@master/asset/js/income'
+		income: '{/}/template/mojia/asset/js/income'
 	}).use(['admin'], function() {
 		layui.admin.global.init();
 	});

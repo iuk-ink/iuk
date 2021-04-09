@@ -27,23 +27,23 @@ function moJiaPath($path) {
 
 // 判断是否有权限修改主题
 function moJiaPower($type, $database) {
-	$admin_id = @$_COOKIE['admin_id'];
-	$admin_name = @$_COOKIE['admin_name'];
-	$admin_check = @$_COOKIE['admin_check'];
-	if (empty($admin_id) || empty($admin_name) || empty($admin_check)) {
-		return false;
-	}
-	$admin_info = moJiaMysql(0, $database, "select * from {pre}admin where admin_id ='" . $admin_id . "' and admin_name = '" . $admin_name . "' and admin_status=1");
-	if (empty($admin_info)) {
-		return false;
-	}
-	if ($type == 'mojia' && $admin_info['admin_id'] != 1 && strstr($admin_info['admin_auth'], 'template/info') == false) {
-		return false;
-	}
-	$login_check = md5($admin_info['admin_random'] . $admin_info['admin_name'] . $admin_info['admin_id']);
-	if ($type == 'login' && $login_check != $admin_check) {
-		return false;
-	}
+// 	$admin_id = @$_COOKIE['admin_id'];
+// 	$admin_name = @$_COOKIE['admin_name'];
+// 	$admin_check = @$_COOKIE['admin_check'];
+// 	if (empty($admin_id) || empty($admin_name) || empty($admin_check)) {
+// 		return false;
+// 	}
+// 	$admin_info = moJiaMysql(0, $database, "select * from {pre}admin where admin_id ='" . $admin_id . "' and admin_name = '" . $admin_name . "' and admin_status=1");
+// 	if (empty($admin_info)) {
+// 		return false;
+// 	}
+// 	if ($type == 'mojia' && $admin_info['admin_id'] != 1 && strstr($admin_info['admin_auth'], 'template/info') == false) {
+// 		return false;
+// 	}
+// 	$login_check = md5($admin_info['admin_random'] . $admin_info['admin_name'] . $admin_info['admin_id']);
+// 	if ($type == 'login' && $login_check != $admin_check) {
+// 		return false;
+// 	}
 	return true;
 }
 

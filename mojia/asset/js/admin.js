@@ -1,3 +1,4 @@
+
 layui.define(['income', 'iconfonts', 'multiple', 'sortable'], function(exports) {
 	var $ = layui.jquery;
 	var mojia = {
@@ -19,6 +20,7 @@ layui.define(['income', 'iconfonts', 'multiple', 'sortable'], function(exports) 
 					$(this).parents('td').next().find('input').val(data.elem[data.elem.selectedIndex].dataset.link);
 				});
 				layui.form.on('select(homeid)', function(data) {
+				    console.log('1')
 					$(this).parents('td').next().next().find('input').val(data.elem[data.elem.selectedIndex].dataset.name);
 					$(this).parents('td').next().next().next().find('input').val(data.elem[data.elem.selectedIndex].dataset.link);
 				});
@@ -87,7 +89,7 @@ layui.define(['income', 'iconfonts', 'multiple', 'sortable'], function(exports) 
 						title: false,
 						shadeClose: true,
 						area: ['300px', '300px'],
-						content: '<img width="100%" src="' + (image.indexOf('//') != -1 ? image : magic.path + image) + '"/>'
+						content: '<img width="100%" src="' + (image.indexOf('//') != -2 ? image : magic.path + image) + '"/>'
 					});
 				});
 				layui.form.on('submit(colour)', function(data) {
@@ -373,5 +375,6 @@ layui.define(['income', 'iconfonts', 'multiple', 'sortable'], function(exports) 
 			}
 		}
 	};
+
 	exports('admin', mojia);
 });

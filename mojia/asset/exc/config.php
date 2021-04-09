@@ -1093,7 +1093,7 @@ return array (
     'cdns' =>
     array (
       'name' => '静态加速',
-      'link' => 'https://cdn.jsdelivr.net/gh/amujie/mojia',
+      'link' => '/template/mojia',
       'local' => '0',
 	  'debug' => '1',
       'state' => '1',
