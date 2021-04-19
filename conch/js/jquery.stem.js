@@ -52,7 +52,7 @@ var ikan = {
 		}
 	},
 	swiper: function() {
-		$.getScript(maccms.path + "/template/conch/js/swiper.min.js", function() {
+		$.getScript("https://cdn.jsdelivr.net/gh/iuk-ink/iuk@master/conch/js/swiper.min.js", function() {
 				var swiper = new Swiper('.banner-top', {
 					autoplay: 5000,
 					autoplayDisableOnInteraction : false,
@@ -175,7 +175,7 @@ var ikan = {
 	wrapper: function() {
 		var windowWidth = $(window).width();
 		if (windowWidth < 820) {
-		$.getScript(maccms.path + "/template/conch/js/iscroll.js", function() {
+		$.getScript("https://cdn.jsdelivr.net/gh/iuk-ink/iuk@master/conch/js/iscroll.js", function() {
 		  // $(".wrapper").navbarscroll();
 		  // $('#ik01').navbarscroll({SelectName:'.ik-n-01'});
 		  // $('#ik02').navbarscroll({SelectName:'.ik-n-02'});
@@ -231,7 +231,7 @@ var ikan = {
 	
 	images: {
 		lazyload: function() {
-			$.getScript(maccms.path + "/template/conch/js/jquery.lazyload.min.js", function() {
+			$.getScript("https://cdn.jsdelivr.net/gh/iuk-ink/iuk@master/conch/js/jquery.lazyload.min.js", function() {
 				$(".lazyload").lazyload({
 					effect: "fadeIn",
 					threshold: 200,
@@ -251,7 +251,7 @@ var ikan = {
 			})
 		},
 		qrcode: function() {
-			$.getScript(maccms.path + "/template/conch/js/jquery.qrcode.min.js", function() {
+			$.getScript("https://cdn.jsdelivr.net/gh/iuk-ink/iuk@master/conch/js/jquery.qrcode.min.js", function() {
 				$(".cans").qrcode({
 					width:120,
 					height:120,
@@ -282,7 +282,7 @@ var ikan = {
 		})
 	},
 	copy: function() {
-		$.getScript(maccms.path + "/template/conch/js/clipboard.min.js", function() {
+		$.getScript("https://cdn.jsdelivr.net/gh/iuk-ink/iuk@master/conch/js/clipboard.min.js", function() {
 			var btn=document.getElementsByClassName('copy_btn');
 			var clipboard=new Clipboard(btn);
 			clipboard.on('success', function(e){
